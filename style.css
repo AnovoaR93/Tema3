@@ -1,19 +1,25 @@
+/* Estilo global para resetear márgenes y definir box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo general para el cuerpo */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Estilo para la cabecera */
 header {
     background-color: #004080;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    border-bottom: 5px solid #002850;
 }
 
 header img {
@@ -21,22 +27,40 @@ header img {
     margin-bottom: 0.5rem;
 }
 
+/* Diseño de la sección principal */
 .main {
-    padding: 1rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
+h2 {
+    margin-bottom: 1rem;
+    color: #004080;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Estilo para la tabla de agenda */
 .agenda table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .agenda th, .agenda td {
     border: 1px solid #ddd;
-    padding: 0.5rem;
+    padding: 0.75rem;
     text-align: left;
 }
 
@@ -49,24 +73,49 @@ header img {
     transition: background-color 0.5s ease;
 }
 
+/* Estilo para el formulario */
 form {
     max-width: 400px;
     margin: auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 form input, form select, form button {
     width: 100%;
     margin-bottom: 1rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
 
+form button {
+    background-color: #004080;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #002850;
+}
+
+.hidden {
+    display: none;
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Estilo para el pie de página */
 footer {
     background-color: #004080;
     color: white;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+    margin-top: 2rem;
 }
 
 footer a {
@@ -82,6 +131,8 @@ iframe {
     width: 100%;
     height: 200px;
     border: 0;
+    margin-top: 1rem;
+    border-radius: 8px;
 }
 
 @media (max-width: 768px) {

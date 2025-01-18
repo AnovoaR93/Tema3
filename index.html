@@ -1,12 +1,18 @@
+HTML FILE (index.html):
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evento de Programación U-tad</title>
+    <!-- Vinculación del archivo CSS para estilos -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Vinculación del archivo JavaScript para interactividad -->
+    <script src="scripts.js" defer></script>
 </head>
 <body>
+    <!-- Cabecera del sitio con el logo, título y detalles del evento -->
     <header>
         <img src="logo-utad.png" alt="Logo U-tad">
         <h1>Evento de Programación U-tad</h1>
@@ -14,11 +20,13 @@
     </header>
 
     <main class="main">
+        <!-- Sección de introducción al evento -->
         <section class="section introduction">
             <h2>Introducción</h2>
             <p>Únete a nosotros en el Evento de Programación U-tad, donde exploraremos las últimas tendencias en tecnología, desarrollo de software y mucho más. Disfruta de charlas inspiradoras y talleres interactivos diseñados para todos los niveles.</p>
         </section>
 
+        <!-- Sección con la agenda del evento -->
         <section class="section agenda">
             <h2>Agenda del Evento</h2>
             <table>
@@ -30,6 +38,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Ejemplo de sesiones programadas -->
                     <tr>
                         <td>09:00 - 10:00</td>
                         <td>Dr. Ana Pérez</td>
@@ -49,9 +58,11 @@
             </table>
         </section>
 
+        <!-- Sección del formulario de registro -->
         <section class="section registration">
             <h2>Registro</h2>
-            <form>
+            <!-- Formulario para recopilar información de los asistentes -->
+            <form id="registration-form">
                 <input type="text" name="name" placeholder="Nombre Completo" required>
                 <input type="email" name="email" placeholder="Correo Electrónico" required>
                 <select name="sessions" required>
@@ -62,9 +73,12 @@
                 </select>
                 <button type="submit">Registrar</button>
             </form>
+            <!-- Mensaje de éxito que se muestra tras el registro -->
+            <p id="success-message" class="hidden">¡Gracias por registrarte! Te esperamos en el evento.</p>
         </section>
     </main>
 
+    <!-- Pie de página con información adicional y enlaces -->
     <footer>
         <p>Contacto: eventos@utad.com | Teléfono: +34 91 123 4567</p>
         <p><a href="https://www.utad.com">Visita nuestra página web</a> | Síguenos en <a href="#">Twitter</a>, <a href="#">Facebook</a></p>
