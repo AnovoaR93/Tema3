@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.agenda table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.agenda th, .agenda td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.agenda th {
+    background-color: #f4f4f4;
+}
+
+.agenda td:hover {
+    background-color: #cce7ff;
+    transition: background-color 0.5s ease;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form select, form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a {
+    color: #add8e6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%;
+    height: 200px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .agenda table {
+        font-size: 0.9rem;
+    }
+}
